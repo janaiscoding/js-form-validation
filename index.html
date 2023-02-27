@@ -8,51 +8,60 @@
     <script src="validation.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: bisque;">
-    <div class="form-wrapper">
-        <form class="form">
-            <div class="form-group">
-                <div class="separate-title">
-                    <label for="email">Email</label>
-                </div>
-                    <input type="text" id="email" name="email" required placeholder="Your email address">
-            </div>
-            <div class="form-group">
-                <div class="separate-title">
-                    <label for="country">Country</label>
-                </div>
-                    <select id="country" name="country">
-                        <option value="default">Select your Country</option>
-                        <option value="US">United States</option>
-                        <option value="DE">Germany</option>
-                    </select>
-            </div>
-            <div class="form-group">
-            <div class="separate-title">
-                <label for="zip-code">Zip Code</label>
-            </div>
-                <input type="number" id="zip-code" name="zip-code" required placeholder="Your Zipcode">
-                <p class = "info info-zc">Must match selected country</p>
-            </div>
-            <div class="form-group">
-            <div class="separate-title">
-                <label for="password">Password</label>
-            </div>
-                <input type="password" id="password" name="password" required placeholder="Your Password">
-                <p class = "info info-pw"></p>
-            </div>
-            <div class="form-group">
-            <div class="separate-title">
-                <label for="password-confirm">Password Confirmation</label>
-                </div>  
-                <input type="password" id="password-confirm" name="password-confirm" required placeholder="Confirm your Password">
-                <p class = "info info-pwc"></p>
-            </div>
+<body>
+    <header class="header-wrapper">
+        <a href="https://janaiscoding.github.io/js-form-validation/" class="logo">User Form</a>
+        <a href="https://www.linkedin.com/in/jana-istrate/" class="contact-link" target="_blank">Contact Me</a>
+    </header>
+        <main class="form-wrapper">
+            <form class="form">
+                <legend>Submit your info:</legend>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary button" id="submit">Submit</button>
-                    <div class="success"></div>
+                    <div class="separate-title">
+                        <label for="email">Email</label>
+                    </div>
+                        <input type="text" id="email" name="email" required placeholder="Your email address">
                 </div>
-        </form>
-    </div>
+                <div class="form-group">
+                    <div class="separate-title">
+                        <label for="country">Country</label>
+                    </div>
+                        <select id="country" name="country">
+                            <option value="default">Select your Country</option>
+                            <option value="US">United States</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                <div class="separate-title">
+                    <label for="zip-code">Zip Code</label>
+                </div>
+                    <input type="number" id="zip-code" name="zip-code" required placeholder="Your Zipcode">
+                    <p class = "info info-zc">Must match selected country</p>
+                </div>
+                <div class="form-group">
+                <div class="separate-title">
+                    <label for="password">Password</label>
+                </div>
+                    <input type="password" id="password" name="password" required placeholder="Your Password">
+                    <p class = "info info-pw"></p>
+                </div>
+                <div class="form-group">
+                <div class="separate-title">
+                    <label for="password-confirm">Password Confirmation</label>
+                    </div>
+                    <input type="password" id="password-confirm" name="password-confirm" required placeholder="Confirm your Password">
+                    <p class = "info info-pwc"></p>
+                </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary button" id="submit">Submit</button>
+                        <div class="success"></div>
+                    </div>
+            </form>
+        </main>
+     <!-- Footer section -->
+     <footer class="footer">
+        <a href="https://github.com/janaiscoding" class="footer-link" target="_blank">©JanaIsCoding</a>
+    </footer>
 </body>
 </html>

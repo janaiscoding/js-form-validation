@@ -4,13 +4,52 @@
     --info-color: rgb(62, 62, 19);
     --valid-color: rgb(63, 94, 15);
     --invalid-color: rgb(98, 20, 20);
+    --primary-white: #EEEEEE;
+    --primary-purple: #18122B;
+    --purple-background: #393053;
+}
+body {
+    background-color: bisque;
+}
+
+/* HEADER */
+.header-wrapper {
+    display:flex;
+    height: 10vh;
+    background-color: var(--purple-background);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.logo {
+    color:var(--primary-white);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.contact-link,
+.footer-link{
+    color: var(--primary-white);
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 100px;
+}
+.footer-link{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.contact-link:hover{
+    border-bottom: 2px solid var(--primary-white);
 }
 
 .form-wrapper{
     display:flex;
+    height: 85vh;
     justify-content: center;
-    align-content: center;
-    height: 100vh;
+    background-color: var(--primary-white)
 }
 
 .form {
@@ -19,8 +58,22 @@
     justify-content: center; 
     background-color: aliceblue;
     text-align: left;
+    box-shadow: 5px 0px 15px -7px #A7A7A7;
+    height: fit-content;
+    position: relative;
+    top: 10vh;
+    padding: 2rem;
+    border-radius: 20px;
 }
-
+legend{
+    color: var(--info-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style:italic;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 .info,
 .success{
     display:none;
@@ -112,4 +165,23 @@ input:focus {
 .submit-disabled-state{
     cursor: not-allowed;
     background: #222d394c;
+}
+/*footer */
+.footer{ 
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    background-color: var(--purple-background);
+    color: var(--primary-white);
+    justify-content: center;
+    align-items: center;
+}
+
+/* global settings */
+a,
+a:visited {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
 }
