@@ -1,7 +1,7 @@
 <h1> Jana's JS Form Validation </h1>
 
 # Live Demo 
-
+[](https://github.com/janaiscoding/js-form-validation/blob/main/js-form-valid-preview.gif)
 - Live preview [here](https://janaiscoding.github.io/js-form-validation/).
 - User Input Form which uses JS Custom Validation API.</br> 
 - Checks every input while it completes, validates it, and requires all fields before submission. </br>
