@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return true;
         }
         else {
-          passwordInfo.innerHTML = "1 Upper, 1 Lower, 1 special symbol, 8 chars";
+          passwordInfo.innerHTML = "1 Upper, 1 Lower, 1 symbol, 8 chars";
           passwordInfo.style.display = "block";
           return false;
         }

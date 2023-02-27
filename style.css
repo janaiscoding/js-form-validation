@@ -61,7 +61,7 @@ body {
     box-shadow: 5px 0px 15px -7px #A7A7A7;
     height: fit-content;
     position: relative;
-    top: 10vh;
+    margin-top: 5vh;
     padding: 2rem;
     border-radius: 20px;
 }
